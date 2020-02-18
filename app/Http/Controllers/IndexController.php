@@ -17,5 +17,7 @@ public function index(){
     
 }
 
-         
+    public function pag1(){
+    	return view('pag1');
+    }     
 }

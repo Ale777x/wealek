@@ -15,7 +15,7 @@
            <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div class="links">
-          <a href="https://laravel.com/docs">Docs</a>
+          <a href="pag1">Docs</a>
           <a href="https://laracasts.com">Laracasts</a>
           <a href="https://laravel-news.com">News</a>
           <a href="https://blog.laravel.com">Blog</a>
