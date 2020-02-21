@@ -7,9 +7,9 @@
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div class="jumbotron">
     <div class="container">
-    <h1 class="display-3">{{$hw}}</h1>
-      <p>{{$ms}}</p>
-      <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+    <h1 class="display-3">{{$h}}</h1>
+      <p>{{$t}}</p>
+      <p><a class="btn btn-primary btn-lg" href=" " role="button">Learn more &raquo;</a></p>
     </div>
   </div>
 
@@ -21,9 +21,9 @@
     <div class="col-md-4">
       {{$article->title}};
       {{$article->description}};
-     <img src= {{$article->img }};  <style width=300px;></style>
+     <img src= {{$article->img}};  <style width=300px;></style>
 
-        <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        <p><a class="btn btn-secondary" href="{{ route('articleShow',['id'=>$article->id])}}" role="button">View details &raquo;</a></p>
       </div>
       @endforeach
     </div>
