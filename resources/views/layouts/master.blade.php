@@ -16,7 +16,7 @@
         </div>
         <div class="links">
           <a href="pag1">Docs</a>
-          <a href="https://laracasts.com">Laracasts</a>
+          <a href="/page/add">Laracasts</a>
           <a href="https://laravel-news.com">News</a>
           <a href="https://blog.laravel.com">Blog</a>
           <a href="https://nova.laravel.com">Nova</a>
@@ -26,6 +26,18 @@
          </div>
        </div>
     </nav>
+
+    @if(count($errors)>0)
+
+    <div class="alert alert-danger">
+      <ul>
+        @foreach($errors->all() as $error)
+        <li>{{$error}}</li>
+
+        @endforeach
+      </ul>
+
+      @endif
 
 @yield ('content')
 
