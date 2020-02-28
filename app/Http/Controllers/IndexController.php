@@ -43,5 +43,11 @@ public function store(Request $request){
 	return redirect('/');
 
 }
+public function deleteArticle(){
+	$id=$_GET['id'];
+
+	Article::findOrFail($id)->delete();
+	return redirect('/');
+}
 
 }

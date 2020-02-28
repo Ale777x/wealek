@@ -23,3 +23,5 @@ Route::get('article/{id}','IndexController@show')->name('articleShow');
 Route::get('page/add', 'IndexController@add');
 
 Route::post('page/add' , 'IndexController@store')->name('articleStore');
+
+Route::get('/deleteArticle' , 'IndexController@deleteArticle');

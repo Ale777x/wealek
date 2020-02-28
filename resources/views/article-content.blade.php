@@ -23,6 +23,12 @@
       <p>{{!!$article->text!!}}</p>
       <img src= {{$article->img}};> 
 
+        <form action="{{ route('articleDelete' , ['article'=>$article->id])}}" method="post">
+          {{method_field('delete')}}
+          @csrf
+          <button type="submit" class="btn btn-danger">Delete</button>
+      </div>
+
     @endif
     </div>
     <hr>
